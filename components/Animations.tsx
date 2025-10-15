@@ -11,7 +11,7 @@ export const fadeInDown = {
 };
 export const fadeInDown2 = {
   initial: { opacity: 0, y: -50 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as any } },
 };
 
 export const fadeInLeft = {
@@ -58,14 +58,14 @@ export const zoomInSlight = {
   show: {
     opacity: 1,
     scale: 1.1,
-    transition: { duration: 0.8, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" as any },
   },
 };
 
 export const fadeIn = {
   initial: { opacity: 0, y: 40 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: "easeInOut" },
+  transition: { duration: 0.8, ease: "easeInOut" as any },
 }
 
 export const pulse = {
@@ -75,7 +75,7 @@ export const pulse = {
     transition: {
       duration: 1.5,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut" as any, 
     },
   },
 }
@@ -87,7 +87,7 @@ export const floating = {
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut" as any,
     },
   },
 }
