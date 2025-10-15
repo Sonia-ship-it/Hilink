@@ -1,3 +1,4 @@
+import { Variants } from "framer-motion";
 export const fadeInUp = {
     initial: {opacity: 0, y:30},
     animate: {opacity: 1, y:0},
@@ -39,7 +40,7 @@ export const rotateIn = {
   animate: { opacity: 1, rotate: 0 },
   exit: { opacity: 0, rotate: 10 },
 };
-export const fadeInLeftStaggered = {
+export const fadeInLeftStaggered: Variants = {
   hidden: { opacity: 0, x: -40 },
   show: {
     opacity: 1,
